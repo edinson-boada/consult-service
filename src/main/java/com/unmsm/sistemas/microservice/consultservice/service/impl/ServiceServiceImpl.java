@@ -18,4 +18,9 @@ public class ServiceServiceImpl implements ServiceService {
     public List<ServiceEntity> getByCustomerId(Integer id) {
         return serviceRepository.findByCustomerId(id);
     }
+
+    @Override
+    public ServiceEntity getByServiceId(Integer id) {
+        return serviceRepository.findById(id).get();
+    }
 }

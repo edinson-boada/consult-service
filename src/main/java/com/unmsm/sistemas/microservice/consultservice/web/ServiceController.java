@@ -22,4 +22,9 @@ public class ServiceController {
     public List<ServiceEntity> getByCustomerId(@PathVariable("id") Integer id) {
         return serviceService.getByCustomerId(id);
     }
+
+    @GetMapping("/{id}")
+    public ServiceEntity getByServiceId(@PathVariable("id") Integer id) {
+        return serviceService.getByServiceId(id);
+    }
 }

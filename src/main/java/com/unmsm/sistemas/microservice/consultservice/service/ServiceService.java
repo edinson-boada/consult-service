@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ServiceService {
     List<ServiceEntity> getByCustomerId(Integer id);
+    ServiceEntity getByServiceId(Integer id);
 }
